@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="POST" action="Exercicio1.html">
+        <fieldset>
+            <legend>Dados do formulario</legend>
+
+            <div style="display: block">
+                <label for="">Nome</label>
+                <input type="text" name="nome" required autofocus placeholder="Digite o nome...">
+            </div>
+
+            <div style="display: block">
+                <label for="">Data de Nascimento</label>
+                <input name="dtNasc" type="date" value="2022-08-15" min="1900-01-01" max="2022-08-16">
+            </div>
+
+            <div style="display: block">
+                <label for="">CEP</label>
+                <input name="CEP" pattern="[0-9]{5}-[0-9]{3}" title="Digite o cep no formato 99999-999" required>
+            </div>
+
+            <div style="display: block">
+                <label for="">Cor Favorita</label>
+                <input type="color" name="CorFav">
+            </div>
+
+            <div style="display: block">
+                <label>Sexo</label>
+                <input name="sexo" id="masc" type="radio" value="M">
+                <label for="masc">Masculino
+                </label>
+                <input name="sexo" id="fem" type="radio" value="F" checked>
+                <label for="fem">Feminino
+                </label>
+
+                <div style="display: block">
+                    <label>Esporte Favorito</label>
+
+                    <input name="esporteFavorito" id="fut" type="checkbox" value="Futebol">
+                    <label for="masc">Futebol</label>
+
+                    <input name="esporteFavorito" id="basq" type="checkbox" value="Basquete">
+                    <label for="fem">Basquete</label>
+
+                    <input name="esporteFavorito" id="vol" type="checkbox" value="Volei">
+                    <label for="fem">Volei</label>
+
+                </div>
+
+                <div style="display: block">
+                    <label for="">Senha</label>
+                    <input type="password" name="senha">
+                </div>
+
+                <div style="display: block">
+                    <label for="">Foto de Perfil</label>
+                    <input type="file" name="foto">
+                </div>
+
+                <div style="display: block">
+                    <label for="">Observação</label>
+                    <textarea name="observação" rows="5" cols="80"></textarea>
+                </div>
+
+                <div style="display: block">
+                    <label for="">Categoria</label>
+                    <select name="categoria" id="">
+                        <option value="cat1">categoria 1</option>
+                        <option value="cat2">categoria 2</option>
+                        <option value="cat3">categoria 3</option>
+                        <optgroup label="Subcategoria 1">
+                            <option value="cat4">categoria 4</option>
+                            <option value="cat5">categoria 5</option>
+                            <option disabled value="cat6">categoria 6</option>
+                        </optgroup>
+                        <optgroup label="Subcategoria 2">
+                            <option value="cat7">categoria 7</option>
+                            <option value="cat8">categoria 8</option>
+                            <option value="cat9">categoria 9</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div style="display: block">
+                    <button type="submit"> Salvar</button>
+                    <button type="submit" formnovalidate> Salvar Racunho</button>
+                    <button type="reset"> Limpar o Formulário</button>
+                </div>
+
+                <div>
+                    <label for="">Cidade</label>
+                    <input name="cidade" id="cidade" list="listaCidades">
+                    <datalist id="listaCidades">
+                        <option value="Sorocaba"></option>
+                        <option value="Mairinque"></option>
+                        <option value="São Roque"></option>
+                    </datalist>
+                </div>
+                <div contenteditable="true">
+                    <details>
+                        <summary>Copiando <progress max="39248" value="14718"> 37,5%</summary>
+                        <dl>
+                            <dt>Tamanho total:</dt>
+                            <dd>39.248KB</dd>
+                            <dt>Transferido:</dt>
+                            <dd>14.718</dd>
+                            <dt>Taxa de transferência:</dt>
+                            <dd>127KB/s</dd>
+                            <dt>Nome do arquivo:</dt>
+                            <dd>HTML5.mp4</dd>
+                        </dl>
+                    </details>
+                </div>
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
