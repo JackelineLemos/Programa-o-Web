@@ -1,119 +1,209 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jackeline</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style type="text/css">
+        .teste{width: 100px;
+            height: 100px;
+            background-color: yellow;
+            transition: width 2s, height 4s;
+        }
+        .teste:hover {
+            width: 300px;
+            height: 300px;
+        }
+        .zoom:hover{
+            padding: 50px;
+            background-color: green;
+            transition: transform .2s;/*animação*/
+            width: 200px;
+            height: 200px;
+            margin: o auto;
+        }
+        .zoom:hover{
+            transform: scale(1.5);
+        }
+        a:hover, a:focus{
+            font-size:xx-large;
+        }
+        a:link{
+            color: azure;
+        }
+        a:visited{
+            color: red;
+        }
+        a:active{
+            color: burlywood;
+        }
+            
+        #listaDetalhe{
+            text-align: center;
+            font-style: italic;
+        }
+        .cabecalho {
+            background-color: aqua;
+            font-size: x-large;
+            font-weight: bold;
+        }
+
+        body {
+            background-color: lightyellow;
+        }
+
+        table {
+            border: solid 1px;
+            width: 100%;
+            border-spacing: 0px;
+        }
+
+        td {
+            padding: 10px;
+            border: solid 1px;
+        }
+
+        th {
+            padding: 10px;
+            border: solid 1px;
+            font-weight: bold;
+        }
+
+        p a {
+            background-color: brown;
+        }
+    </style>
 </head>
-<body>
-    <a href="#ProgramacaoWeb">Programação web </a><br/>
-    <a href="#IpsumTitle">ipsum title</a><br/>
-    <a href = "#LoremSubtitle">Lorem subtitle</a> <br/>
-    <a href = "formulario.html" target="_blank">Abrir Formulário</a>
 
-    <h2>Exemplo Lista de Detalhe</h2>
-    <dl>
-    <dt>intem 1</dt> 
-    <dd>este é o item 1....</dd>
-    <dt>intem 2</dt>
-    <dd>este é o item 2....</dd>
-    <dt>intem 3</dt>
-    <dd>este é o item 3....</dd>
-    </dl>
+<body style="background-color: blueviolet;">
+    <div class="zoom">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, repellendus, quidem unde, deserunt sunt exercitationem voluptate modi provident debitis nulla ducimus maiores fugit qui blanditiis ab assumenda similique facere eum.
+    </div>
+    
+    <div class="teste"></div>
 
+    <header class="cabecalho">
+        <a href="#ProgramacaoWeb">Programação web </a><br />
+        <a href="#IpsumTitle">ipsum title</a><br />
+        <a href="#LoremSubtitle">Lorem subtitle</a> <br />
+        <a href="formulario.html" target="_blank">Abrir Formulário</a>
+
+        <h2>Exemplo Lista de Detalhe</h2>
+        <dl>
+            <dt>intem 1</dt>
+            <dd>este é o item 1....</dd>
+            <dt>intem 2</dt>
+            <dd>este é o item 2....</dd>
+            <dt>intem 3</dt>
+            <dd>este é o item 3....</dd>
+        </dl>
+    </header>
+    
     <h2>Exemplo Lista Ordenada</h2>
     <ol>
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
-    <li><ol>
         <li>Item 1</li>
         <li>Item 2</li>
         <li>Item 3</li>
-        </ol></li>
+        <li>
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+        </li>
     </ol>
 
-    <h2>Exemplo Lista Não Ordenada</h2>
+    <h2 id="listaDetalhe">Exemplo Lista Não Ordenada</h2>
     <ul>
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
-    <li><ul>
         <li>Item 1</li>
         <li>Item 2</li>
         <li>Item 3</li>
-        </ul></li>
+        <li>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </li>
     </ul>
 
 
     <h1 id="ProgramacaoWeb">Programação web</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet 
-        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium 
+    <p> ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet
+        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium
         semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut
-         turpis dictum hendrerit.
-         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet 
-         placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium 
-         semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut
-          turpis dictum hendrerit.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet 
-          placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium 
-          semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut
-           turpis dictum hendrerit. <a href="Exercicio1.html" target="_blank">Clique aqui e faça o exercício 1</a><hr/>
-           <marquee><a href="Exercicio1.html#SegPar" target="_blank">Titulo 2</a></marquee></p>
+        turpis dictum hendrerit.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet
+        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium
+        semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut
+        turpis dictum hendrerit.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet
+        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium
+        semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut
+        turpis dictum hendrerit. <a href="Exercicio1.html" target="_blank">Clique aqui e faça o exercício 1</a>
+        <hr />
+        <marquee><a href="Exercicio1.html#SegPar" target="_blank">Titulo 2</a></marquee>
+    </p>
     <h2 id="IpsumTitle">ipsum title</h2>
     <img src="img/logo.png" alt="imagem do logotipo">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet 
-        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium 
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet
+        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium
         semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut turpis
-         dictum hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac 
-         purus sit amet placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. 
-         Aliquam pretium semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis. 
-         Aliquam iaculis ante ut turpis dictum hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-         Curabitur consectetur ac purus sit amet placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem.
-          Aliquam pretium semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis 
-          ante ut turpis dictum hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur 
-          consectetur ac purus sit amet placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus 
-          sem. Aliquam pretium semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam 
-          iaculis ante ut turpis dictum hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Curabitur consectetur ac purus sit amet placerat. Phasellus posuere ut metus quis eleifend. 
-          Donec sit amet faucibus sem. Aliquam pretium semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium
-           sagittis. Aliquam iaculis ante ut turpis dictum hendrerit.Lorem ipsum dolor sit amet, consectetur 
-           adipiscing elit. Curabitur consectetur ac purus sit amet placerat. Phasellus posuere ut metus quis 
-           eleifend. Donec sit amet faucibus sem. Aliquam pretium semper faucibus. Cras at gravida ipsum. 
-           Mauris rutrum pretium sagittis. Aliquam iaculis ante ut turpis dictum hendrerit.Lorem ipsum dolor sit 
-           amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet placerat. Phasellus posuere 
-           ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium semper faucibus. Cras at gravida 
-           ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut turpis dictum hendrerit.Lorem ipsum 
-           dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet placerat. 
-           Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium semper faucibus. 
-           Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut turpis dictum hendrerit.
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet placerat.
-           suere ut metus quis eleifend. Donec sit amet faucibus sem. 
-           Aliquam pretium semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis 
-           ante ut turpis dictum hendrerit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-           Curabitur consectetur ac purus sit amet placerat. Phasellus posuere ut metus quis eleifend. 
-           Donec sit amet faucibus sem. Aliquam pretium semper faucibus. Cras at gravida ipsum. Mauris 
-           rutrum pretium sagittis. Aliquam iaculis ante ut surpis dictum hendrerit.Lorem ipsum dolor 
-           sit amet, consectetur adipiscing elit. 
-           Curabitur consectetur ac purus sit amet placerat. Phasellus posuere ut metus quis eleifend.
-            Donec sit amet faucibus sem. Aliquam pretium semper faucibus. Cras at gravida ipsum. 
-           Mauris rutrum pretium sagittis. Aliquam iaculis ante ut turpis dictum hendrerit.Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet placerat. 
-            Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium semper faucibus.
-             Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut surpis dictum hendrerit
-             .Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet 
-             placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium semper
-              faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut turpis dictum hendrerit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet placerat. 
-           Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium semper faucibus. ]
-           Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut turpis dictum hendrerit.
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet placerat.
-           osuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut turpis dictum hendrerit.</p>
-    <h3 id = "LoremSubtitle">Lorem subtitle</h3>
+        dictum hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac
+        purus sit amet placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem.
+        Aliquam pretium semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis.
+        Aliquam iaculis ante ut turpis dictum hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Curabitur consectetur ac purus sit amet placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet
+        faucibus sem.
+        Aliquam pretium semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis
+        ante ut turpis dictum hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+        consectetur ac purus sit amet placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus
+        sem. Aliquam pretium semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam
+        iaculis ante ut turpis dictum hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Curabitur consectetur ac purus sit amet placerat. Phasellus posuere ut metus quis eleifend.
+        Donec sit amet faucibus sem. Aliquam pretium semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium
+        sagittis. Aliquam iaculis ante ut turpis dictum hendrerit.Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Curabitur consectetur ac purus sit amet placerat. Phasellus posuere ut metus quis
+        eleifend. Donec sit amet faucibus sem. Aliquam pretium semper faucibus. Cras at gravida ipsum.
+        Mauris rutrum pretium sagittis. Aliquam iaculis ante ut turpis dictum hendrerit.Lorem ipsum dolor sit
+        amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet placerat. Phasellus posuere
+        ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium semper faucibus. Cras at gravida
+        ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut turpis dictum hendrerit.Lorem ipsum
+        dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet placerat.
+        Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium semper faucibus.
+        Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut turpis dictum hendrerit.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet placerat.
+        suere ut metus quis eleifend. Donec sit amet faucibus sem.
+        Aliquam pretium semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis
+        ante ut turpis dictum hendrerit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Curabitur consectetur ac purus sit amet placerat. Phasellus posuere ut metus quis eleifend.
+        Donec sit amet faucibus sem. Aliquam pretium semper faucibus. Cras at gravida ipsum. Mauris
+        rutrum pretium sagittis. Aliquam iaculis ante ut surpis dictum hendrerit.Lorem ipsum dolor
+        sit amet, consectetur adipiscing elit.
+        Curabitur consectetur ac purus sit amet placerat. Phasellus posuere ut metus quis eleifend.
+        Donec sit amet faucibus sem. Aliquam pretium semper faucibus. Cras at gravida ipsum.
+        Mauris rutrum pretium sagittis. Aliquam iaculis ante ut turpis dictum hendrerit.Lorem ipsum
+        dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet placerat.
+        Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium semper faucibus.
+        Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut surpis dictum hendrerit
+        .Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet
+        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium semper
+        faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut turpis dictum
+        hendrerit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet
+        placerat.
+        Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium semper faucibus. ]
+        Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut turpis dictum hendrerit.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet placerat.
+        osuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium semper faucibus. Cras at gravida
+        ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut turpis dictum hendrerit.</p>
+    <h3 id="LoremSubtitle">Lorem subtitle</h3>
 
-    <table width= "100%" border="1" cellpadding="10" cellspacing="0">
+    <table>
         <thead>
-            <tr>
+            <tr style="background-color: lightcoral;">
                 <th>coluna 1</th>
                 <th>coluna 2</th>
                 <th>coluna 3</th>
@@ -147,55 +237,66 @@
         </tfoot>
     </table>
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet 
-        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium 
-        semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut
-         turpis dictum hendrerit.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet 
-        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium 
-        semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut
-         turpis dictum hendrerit.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet 
-        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium 
-        semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut
-         turpis dictum hendrerit.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet 
-        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet
+        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium
         semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut
         turpis dictum hendrerit.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet 
-        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet
+        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium
         semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut
-        turpis dictum hendrerit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet 
-        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium 
+        turpis dictum hendrerit.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet
+        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium
         semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut
-        turpis dictum hendrerit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet 
-        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium 
+        turpis dictum hendrerit.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet
+        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium
         semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut
-        turpis dictum hendrerit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet 
-        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium 
+        turpis dictum hendrerit.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet
+        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium
         semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut
-        turpis dictum hendrerit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet 
-        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium 
+        turpis dictum hendrerit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus
+        sit amet
+        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium
         semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut
-        turpis dictum hendrerit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet 
-        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium 
+        turpis dictum hendrerit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus
+        sit amet
+        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium
         semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut
-        surpis dictum hendrerit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet 
-        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium 
+        turpis dictum hendrerit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus
+        sit amet
+        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium
         semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut
-        turpis dictum hendrerit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet 
-        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium 
+        turpis dictum hendrerit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus
+        sit amet
+        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium
         semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut
-        surpis dictum hendrerit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet 
-        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium 
+        turpis dictum hendrerit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus
+        sit amet
+        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium
         semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut
-        turpis dictum hendrerit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet 
-        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium 
+        surpis dictum hendrerit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus
+        sit amet
+        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium
         semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut
-        turpis dictum hendrerit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus sit amet 
-        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium 
+        turpis dictum hendrerit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus
+        sit amet
+        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium
+        semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut
+        surpis dictum hendrerit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus
+        sit amet
+        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium
+        semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut
+        turpis dictum hendrerit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus
+        sit amet
+        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium
+        semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut
+        turpis dictum hendrerit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ac purus
+        sit amet
+        placerat. Phasellus posuere ut metus quis eleifend. Donec sit amet faucibus sem. Aliquam pretium
         semper faucibus. Cras at gravida ipsum. Mauris rutrum pretium sagittis. Aliquam iaculis ante ut
         turpis dictum hendrerit.</p>
 </body>
+
 </html>
