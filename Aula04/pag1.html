@@ -5,23 +5,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aula 4</title>
+    <style type="text/css">
+        body{
+            font-family: Arial;
+        }
+        .tb1{
+            border: 1px solid black;
+            width: 766px;
+            height: 36px;
+            background-color: #003;
+            margin-top: 10px;
+            
+            
+        }
+        .principal{
+            font-weight: bold;
+            font-style: italic;
+            font-size: 30px;
+            color: #280;         
+        }
+        .titulo{
+            font-weight: bold;
+            font-style: italic;
+            font-size: 15px;
+            background-color: #FFF;      
+        }
+        .origem{
+            font-weight: bold;
+            font-size: 20px;
+            color: #280;
+            background-color: #FFF;       
+        }
+        .resumo{
+            font-size: 12px; 
+            background-color: #FFF;      
+        }
+        .rodape{
+            font-weight: bold;
+            font-size: 11px;
+            text-align: center;
+            background-color: #CFB;
+        }
+        a:link{
+            color: #0000ff;
+        }
+        a:visited{
+            color: #DDC71A;
+        }
+        a:active{
+            color: #AC0B44;
+        }
+        a:hover{
+            font-weight: bold;
+            color: #FF0000;
+        }
+
+        
+    </style>
 </head>
 
 <body>
-    <p>Notícia</p>
+    <p class="principal">Notícia</p>
 
-    <table>
+    <table class="tb1">
         <tr>
-            <td>Estadão</td>
-            <td>Gazeta do Povo</td>
+            <td class="origem">Estadão</td>
+            <td class="origem">Gazeta do Povo</td>
         </tr>
 
         <tr>
-            <td>Vale vende controle dos negocios de</td>
-            <td>Toyota divulga informação sobre convocadas do corolla</td>
+            <td class="titulo">Vale vende controle dos negocios de coisas</td>
+            <td class="titulo">Toyota divulga informação sobre coisas convocadas do corolla</td>
         </tr>
 
+        <tr>
+            <td class="resumo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, reprehenderit! Sapiente
+                dignissimos cumque dolore nobis.<a href="link">leia mais</a></td>
+            <td class="resumo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quam quos perspiciatis, laboriosam
+                exercitationem in. <a href="link">leia mais</a></td>
+        </tr>
+
+    </table>
+
+    <table class="tb1">
+        <td class="rodape">Av. Araucária, 780 - Vila A - Foz do Iguaçu/PR - Telefone: (45) 3422-5300</td>
     </table>
 
 </body>

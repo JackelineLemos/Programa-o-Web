@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                </ul>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..."
+                        aria-label="Search">
+                </form>
+
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-light me-2">Login</button>
+                    <button type="button" class="btn btn-warning">Sign-up</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" disabled>Disabled</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">...</div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
+        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
+        <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
+      </div>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-12">
+                <div id=" myCarousel" class="carousel slide" data-bs-ride="carousel">
+                    
+                    <div class="carousel-indicators">
+                        
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class=""
+                            aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+                            class=""></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
+                            class="active" aria-current="true"></button>
+                    </div>
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item">
+                            
+                            <svg class="bd-placeholder-img" width="100%" height="100%"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <rect width="100%" height="100%" fill="#777"></rect>
+                            </svg>
+
+                            <div class="container">
+                                <div class="carousel-caption text-start">
+                                    <h1>Example headline.</h1>
+                                    <p>Some representative placeholder content for the first slide of the carousel.</p>
+                                    <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <svg class="bd-placeholder-img" width="100%" height="100%"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <rect width="100%" height="100%" fill="#777"></rect>
+                            </svg>
+
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <h1>Another example headline.</h1>
+                                    <p>Some representative placeholder content for the second slide of the carousel.</p>
+                                    <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <svg class="bd-placeholder-img" width="100%" height="100%"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <rect width="100%" height="100%" fill="#777"></rect>
+                            </svg>
+
+                            <div class="container">
+                                <div class="carousel-caption text-end">
+                                    <h1>One more for good measure.</h1>
+                                    <p>Some representative placeholder content for the third slide of this carousel.</p>
+                                    <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-12 col-md-4">
+                
+                <div class="card" style="width: 18rem;">
+                    <img src="https://www.w3schools.com/css/img_lights.jpg" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div> </div>
+            <div class="col-12 col-md-4"> 
+                <div class="card" style="width: 18rem;">
+                    <img src="https://www.w3schools.com/css/img_lights.jpg" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-12 col-md-4"> 
+                <div class="card" style="width: 18rem;">
+                    <img src="https://www.w3schools.com/css/img_lights.jpg" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            
+        </div>
+
+
+
+        ">
+        <div class="row">
+            <div class="col-4">Coluna 1</div>
+            <div class="col-4">Coluna 2</div>
+            <div class="col-4">Coluna 3</div>
+            <div class="col-10">Coluna 4</div>
+            <div class="col-2">Coluna 5</div>
+            <div class="col-12">Coluna 6</div>
+
+        </div>
+
+        <div>
+            table class="table">
+            <thead>
+                <tr>
+                    <td></td>
+                    <td>Foto</td>
+                    <td>Codigo</td>
+                    <td>Descrição</td>
+                    <td>Qtde em Estoque</td>
+                    <td>Valor Unitário</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td><img width="100px"
+                            src="https://www.logitechstore.com.br/media/catalog/product/cache/1/image/634x545/9df78eab33525d08d6e5fb8d27136e95/9/1/910-001601.png"
+                            alt="mouse peba"></td>
+                    <td align="center" valing="center">1</td>
+                    <td>Mouse Laser com fio Dell</td>
+                    <td align="center" valing="center">5</td>
+                    <td align="center" valing="center">R$ 179,00</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td><img width="100px"
+                            src="data:image/jpeg;base64,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"
+                            alt="mouse 2"></td>
+                    <td align="center" valing="center">2</td>
+                    <td>Mouse Bluetooth Dell</td>
+                    <td align="center" valing="center">6</td>
+                    <td align="center" valing="center">R$ 338,00</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td><img width="120px"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGcA7jyWZDOfhA_p3ShlENRJ3YXMwsttVsOA&usqp=CAU"
+                            alt="mouse 3"></td>
+                    <td align="center" valing="center">3</td>
+                    <td>Mouse Óptico usb Preto 100</td>
+                    <td align="center" valing="center">3</td>
+                    <td align="center" valing="center">R$ 48,30</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
