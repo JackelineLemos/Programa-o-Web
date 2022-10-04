@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <title>Jack</title>
+</head>
+
+<body>
+
+
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="nome" placeholder="Ex: Jackeline " style="width: 25%">
+    </div>
+
+    <div class="col-md-12">
+        <button onclick="salvar()" type="button" value="Input" class="btn btn-primary">Salvar</button>
+        <button onclick="atualizar()" class="btn btn-dark">Atualizar Listagem</button>
+    </div>
+    <br>
+    <div class="col-md-12">
+        <input class="form-control" id="filtro" placeholder="Ex: J" style="width: 25%" onkeyup="filtro()">
+
+        <ul id="lista"> </ul>
+    </div>
+
+
+    <script>
+        let nome = [];
+
+        function salvar() {
+            var nomes = document.getElementById('nome');
+            console.log(nome.push(nomes.value));
+            console.log(nome);
+            
+        }
+
+        function atualizar() {
+            var tul = document.getElementById("lista");
+            tul.innerHTML = "";
+
+            for (let i = 0; i < nome.length; i++) {
+
+                var li1 = document.createElement('li');
+                li1.innerHTML = nome[i];
+                tul.appendChild(li1);
+
+            }
+        }
+
+        function filtro() {
+            let filtro = document.getElementById('filtro').value;
+            var lista = document.getElementById('lista');
+            lista.innerHTML = '';
+            let arrayFiltro = nome.filter(n =>n.startsWith(filtro));
+            arrayFiltro.forEach(n => {
+                let li = document.createElement('li');
+                li.innerHTML = n;
+                lista.appendChild(li);
+            })
+        }
+
+    </script>
+</body>
+
+</html>
