@@ -1,0 +1,15 @@
+<app-menu-topo [estaAutenticado]="autenticado"></app-menu-topo>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <button type="button" (click)="autenticado = !autenticado" class="btn"
+                [ngClass]="{'btn-danger': autenticado, 'btn-success' : !autenticado}">
+                {{autenticado ? 'Logoff' : 'Autenticar'}}</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
